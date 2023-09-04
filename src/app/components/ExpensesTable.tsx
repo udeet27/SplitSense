@@ -20,7 +20,6 @@ export const ExpensesTable = ({ expenses }: Props) => (
         description,
         users,
         groupTotal,
-        costUSD,
       } = expense;
       return (
         <TableRow
@@ -44,14 +43,14 @@ export const ExpensesTable = ({ expenses }: Props) => (
           <TableCell>
             {currencyCode} {cost}
           </TableCell>
-          <TableCell> {costUSD ? `USD ${costUSD}` : "-"}</TableCell>
+          {/* <TableCell> {costUSD ? `USD ${costUSD}` : "-"}</TableCell> */}
           <TableCell>{formatDate(new Date(date).getTime())}</TableCell>
           <TableCell>
             <div className="flex gap-2">
               {users.map(({ user }) => (
                 <Badge key={user.id}>
-                  {user.first_name?.[0]}
-                  {user.last_name?.[0]}
+                  {user.first_name}
+                  {user.last_name}
                 </Badge>
               ))}
             </div>
