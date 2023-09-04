@@ -22,10 +22,10 @@ export default function Dashboard(props: Props) {
       <div className="flex-col flex">
         <div className="flex-1 space-y-4 p-8 pt-6">
           <div className="flex items-center justify-between space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">🫰 mani</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Welcome back,</h2>
             <div className="flex items-center space-x-2">
-              <Link href={"https://t.me/sebipaps"}>
-                <Button variant={"outline"}> Give me feedback!</Button>
+              <Link href={"https://github.com/udeet27/SplitSense"}>
+                <Button variant={"outline"}>Github repo</Button>
               </Link>
               <UserNav />
             </div>
@@ -33,7 +33,7 @@ export default function Dashboard(props: Props) {
           <Tabs defaultValue="overview" className="space-y-4">
             <TabsList>
               <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="chat">Chat ✨</TabsTrigger>
+              {/* <TabsTrigger value="chat">Chat ✨</TabsTrigger> */}
               <TabsTrigger value="income">Income</TabsTrigger>
             </TabsList>
             <TabsContent value="overview" className="space-y-4">
@@ -126,9 +126,9 @@ export default function Dashboard(props: Props) {
                 </Card>
               </div>
             </TabsContent>
-            <TabsContent value="chat" className="space-y-4">
+            {/* <TabsContent value="chat" className="space-y-4">
               <Chat expenses={expenses} />
-            </TabsContent>
+            </TabsContent> */}
             <TabsContent value="income" className="space-y-4">
               <Income expenses={expenses} />
             </TabsContent>
