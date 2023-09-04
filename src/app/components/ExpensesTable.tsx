@@ -26,7 +26,7 @@ export const ExpensesTable = ({ expenses }: Props) => (
           key={id}
           onClick={() => {
             // copy stringified expense to clipboard
-            navigator.clipboard.writeText(JSON.stringify(expense));
+            // navigator.clipboard.writeText(JSON.stringify(expense));
           }}
         >
           <TableCell>{description}</TableCell>
