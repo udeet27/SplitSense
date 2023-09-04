@@ -25,7 +25,7 @@ export default function Dashboard(props: Props) {
             <h2 className="text-3xl font-bold tracking-tight">Welcome back,</h2>
             <div className="flex items-center space-x-2">
               <Link href="https://github.com/udeet27/SplitSense" target="_blank">
-                <Button variant={"outline"}>Github repo</Button>
+                <Button variant={"outline"}>View this project on Github</Button>
               </Link>
               <UserNav />
             </div>
