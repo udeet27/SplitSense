@@ -23,7 +23,7 @@ export default function Dashboard(props: Props) {
           <div className="flex justify-between space-y-2">
             {/* <h2 className="text-3xl font-bold tracking-tight">Welcome back,
             </h2> */}
-            <div className="flex marker:space-x-4">
+            <div className="flex space-x-4">
               <Link href="https://github.com/udeet27/SplitSense" target="_blank">
                 <Button variant="outline">View this project on Github</Button>
               </Link>
