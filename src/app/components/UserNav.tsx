@@ -52,7 +52,6 @@ export function UserNav() {
   console.log(temp); //testing 
   return (
     <>
-    <h2 className="text-3xl font-bold tracking-tight">Welcome back, {name?.split(" ")[0]}</h2>
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
@@ -96,6 +95,8 @@ export function UserNav() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
+    <br />
+    <h2 className="text-3xl font-bold absolute top-1 left-0">Welcome back, {name?.split(" ")[0]}</h2>
     </>
   );
 }
