@@ -16,6 +16,7 @@ import {
 import { signIn, signOut, useSession } from "next-auth/react";
 import { identify, page, track } from "../lib/analytics";
 
+export var temp="";
 export function UserNav() {
   const { data } = useSession();
 
@@ -47,7 +48,7 @@ export function UserNav() {
   const { user } = data;
   if (!user) return null;
   const { image, name, email } = user;
-
+  temp=name?.split(" ")[0]!;
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

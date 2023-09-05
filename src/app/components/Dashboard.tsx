@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { UserNav } from "./UserNav";
+import { UserNav, temp } from "./UserNav";
 import { HistoricExpenses } from "./HistoricExpenses";
 import { Expense } from "../lib/type";
 import { SpendChart } from "./SpendChart";
@@ -9,7 +9,6 @@ import { RecurrentExpenses } from "./RecurrentExpenses";
 import Income from "./Income";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
 type Props = {
   expenses: Expense[];
 };
@@ -22,7 +21,9 @@ export default function Dashboard(props: Props) {
       <div className="flex-col flex">
         <div className="flex-1 space-y-4 p-8 pt-6">
           <div className="flex items-center justify-between space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">Welcome back,</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Welcome back,{" "} 
+          {temp}
+            </h2>
             <div className="flex items-center space-x-2">
               <Link href="https://github.com/udeet27/SplitSense" target="_blank">
                 <Button variant={"outline"}>View this project on Github</Button>
@@ -34,7 +35,7 @@ export default function Dashboard(props: Props) {
             <TabsList>
               <TabsTrigger value="overview">Overview</TabsTrigger>
               {/* <TabsTrigger value="chat">Chat ✨</TabsTrigger> */}
-              <TabsTrigger value="income">Income</TabsTrigger>
+              {/* <TabsTrigger value="income">Income</TabsTrigger> */}
             </TabsList>
             <TabsContent value="overview" className="space-y-4">
               {/* <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -129,9 +130,9 @@ export default function Dashboard(props: Props) {
             {/* <TabsContent value="chat" className="space-y-4">
               <Chat expenses={expenses} />
             </TabsContent> */}
-            <TabsContent value="income" className="space-y-4">
+            {/* <TabsContent value="income" className="space-y-4">
               <Income expenses={expenses} />
-            </TabsContent>
+            </TabsContent> */}
           </Tabs>
         </div>
       </div>
