@@ -95,8 +95,8 @@ export function UserNav() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-    <br />
-    <h2 className="text-3xl font-bold absolute top-1 left-0">Welcome back, {name?.split(" ")[0]}</h2>
+    <br/><br /><br /><br />
+    <h2 className="text-3xl font-bold">Welcome back, {name?.split(" ")[0]}</h2>
     </>
   );
 }
