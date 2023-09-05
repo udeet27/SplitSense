@@ -1,4 +1,4 @@
-<img width="960" alt="image" src="https://github.com/udeet27/SplitSense/assets/75639351/57376aaf-6b37-4720-a655-1bfb616716bf">
+<img width="960" alt="image" src="https://github.com/udeet27/SplitSense/assets/75639351/dced05e7-ea93-4b7e-aabc-768b8abce97a">
 <br>
 
 ### Tech Stack
