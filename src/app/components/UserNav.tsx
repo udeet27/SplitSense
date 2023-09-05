@@ -49,6 +49,7 @@ export function UserNav() {
   if (!user) return null;
   const { image, name, email } = user;
   temp=name?.split(" ")[0]!;
+  console.log(temp);
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
