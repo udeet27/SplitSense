@@ -49,8 +49,10 @@ export function UserNav() {
   if (!user) return null;
   const { image, name, email } = user;
   temp=name?.split(" ")[0]!;
-  console.log(temp);
+  console.log(temp); //testing 
   return (
+    <>
+    <h2 className="text-3xl font-bold tracking-tight">Welcome back, {name?.split(" ")[0]}</h2>
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
@@ -94,5 +96,6 @@ export function UserNav() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
+    </>
   );
 }
