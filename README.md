@@ -1,3 +1,13 @@
+<img width="960" alt="image" src="https://github.com/udeet27/SplitSense/assets/75639351/57376aaf-6b37-4720-a655-1bfb616716bf">
+<br>
+
+### Tech Stack
+- NextJS
+- Shadcn/ui
+- Radix UI
+- Vercel
+- Splitwise API, Openexchangerates API
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
