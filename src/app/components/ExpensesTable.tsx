@@ -3,6 +3,7 @@ import { Expense } from "../lib/type";
 import { formatDate } from "../lib/utils";
 import { TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { COLORS } from "./SpendChart";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 type Props = {
   expenses: Expense[];
@@ -48,10 +49,15 @@ export const ExpensesTable = ({ expenses }: Props) => (
           <TableCell>
             <div className="flex gap-2">
               {users.map(({ user }) => (
-                <Badge key={user.id}>
-                  {user.first_name}{" "}{user.last_name}
-                </Badge>
-              ))}
+                <Badge key={user.id} variant="secondary">
+                  {user.first_name} {user.last_name}&nbsp;&nbsp;
+                  <Avatar className="h-8 w-8">
+                 <AvatarImage src={user.picture.medium || undefined} alt={user.first_name || ""} />
+                 <AvatarFallback>{user.first_name} {user.last_name}</AvatarFallback>
+               </Avatar>
+                </Badge>                
+              ))
+              }
             </div>
           </TableCell>
         </TableRow>
