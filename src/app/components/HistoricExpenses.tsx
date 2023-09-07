@@ -60,7 +60,7 @@ export const HistoricExpenses = ({ expenses }: Props) => {
         placeholder={"Search for a specific spend or category"}
         disabled={!expenses}
       />
-      <Table className="mt-5">
+      <Table className="mt-5 selection:text-sky-400">
         <TableHeader>
           <TableRow>
             <TableHead>Details</TableHead>

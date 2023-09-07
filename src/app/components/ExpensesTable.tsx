@@ -10,7 +10,7 @@ type Props = {
 };
 
 export const ExpensesTable = ({ expenses }: Props) => (
-  <TableBody>
+  <TableBody className="selection:text-sky-400">
     {expenses.map((expense) => {
       const {
         category,
