@@ -10,7 +10,7 @@ type Props = {
 };
 
 export const ExpensesTable = ({ expenses }: Props) => (
-  <TableBody className="selection:text-sky-400">
+  <TableBody className="selection:text-sky-400 font-mono font-normal">
     {expenses.map((expense) => {
       const {
         category,
@@ -38,11 +38,11 @@ export const ExpensesTable = ({ expenses }: Props) => (
               {category.name}
             </Badge>
           </TableCell>
-          <TableCell>
+          <TableCell className="text-green-500 font-bold">
           {currencyCode === "INR" ? "₹" : "$"} {groupTotal}
             {/* {currencyCode} {groupTotal} */}
           </TableCell>
-          <TableCell>
+          <TableCell className="text-red-500 font-bold">
           {currencyCode === "INR" ? "₹" : "$"} {cost}
           </TableCell>
           {/* <TableCell> {costUSD ? `USD ${costUSD}` : "-"}</TableCell> */}

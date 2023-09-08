@@ -20,11 +20,21 @@ export default function Dashboard(props: Props) {
     <>
       <div className="flex-col flex selection:text-sky-400">
         <div className="flex-1 space-y-4 p-8 pt-6">
-          <div className="flex justify-between space-y-2">
+          <div className="flex justify-between space-y-4">
             {/* <h2 className="text-3xl font-bold tracking-tight">Welcome back,
             </h2> */}
+            <h2 className="text-3xl font-bold tracking-tight text-[#1bbc9a]">
+              SplitSense{" "}
+              <span className="text-3xl font-bold tracking-tight text-slate-100">
+                - Visualize your expenses
+              </span>
+            </h2>
+
             <div className="flex space-x-4">
-              <Link href="https://github.com/udeet27/SplitSense" target="_blank">
+              <Link
+                href="https://github.com/udeet27/SplitSense"
+                target="_blank"
+              >
                 <Button variant="outline">View this project on Github</Button>
               </Link>
               <UserNav />
@@ -94,7 +104,7 @@ export default function Dashboard(props: Props) {
             </Card>
           </div> */}
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-              <Card className="col-span-7">
+                <Card className="col-span-7">
                   <CardHeader>
                     <CardTitle>Activity</CardTitle>
                   </CardHeader>
@@ -124,7 +134,6 @@ export default function Dashboard(props: Props) {
                     </CardContent>
                   </Card>
                 </div>
-               
               </div>
             </TabsContent>
             {/* <TabsContent value="chat" className="space-y-4">
