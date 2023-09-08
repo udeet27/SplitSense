@@ -94,6 +94,14 @@ export default function Dashboard(props: Props) {
             </Card>
           </div> */}
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+              <Card className="col-span-7">
+                  <CardHeader>
+                    <CardTitle>Activity</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <HistoricExpenses expenses={expenses} />
+                  </CardContent>
+                </Card>
                 <div className="flex flex-col max-w-[100%] col-span-4 gap-4">
                   <Card className="max-w-[100%]">
                     <CardHeader>
@@ -116,14 +124,7 @@ export default function Dashboard(props: Props) {
                     </CardContent>
                   </Card>
                 </div>
-                <Card className="col-span-3">
-                  <CardHeader>
-                    <CardTitle>Activity</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <HistoricExpenses expenses={expenses} />
-                  </CardContent>
-                </Card>
+               
               </div>
             </TabsContent>
             {/* <TabsContent value="chat" className="space-y-4">

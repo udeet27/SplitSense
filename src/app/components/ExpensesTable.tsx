@@ -39,10 +39,11 @@ export const ExpensesTable = ({ expenses }: Props) => (
             </Badge>
           </TableCell>
           <TableCell>
-            {currencyCode} {groupTotal}
+          {currencyCode === "INR" ? "₹" : "$"} {groupTotal}
+            {/* {currencyCode} {groupTotal} */}
           </TableCell>
           <TableCell>
-            {currencyCode} {cost}
+          {currencyCode === "INR" ? "₹" : "$"} {cost}
           </TableCell>
           {/* <TableCell> {costUSD ? `USD ${costUSD}` : "-"}</TableCell> */}
           <TableCell>{formatDate(new Date(date).getTime())}</TableCell>
