@@ -30,7 +30,7 @@
     "next": "^13.4.19",
     "next-auth": "^4.22.1",
     "react": "^18.2.0",
-    "react-code-blocks": "^0.0.9-0",
+    "react-code-blocks": "^0.1.4",
     "react-day-picker": "^8.8.0",
     "react-dom": "^18.2.0",
     "recharts": "^2.8.0",
