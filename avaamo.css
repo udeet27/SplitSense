@@ -1,0 +1,141 @@
+body.avm-snow{
+  font-family:monospace,sans-serif;
+}
+
+body.avm-snow #messages-list .conversation-item.not-mine p.desc.text-content{
+  border:none;
+  background-color:#111;
+  color:#20c76a;
+    font-family:monospace,sans-serif;
+}
+
+body.avm-snow #messages-list {
+background:#111;
+}
+
+body.avm-snow .media header{
+  color:#f52727;
+}
+
+body.avm-snow .nav-bar.messages_nav-bar{
+  background-color:#111;
+  color:#f52727;
+      font-family:monospace,sans-serif;
+}
+body.avm-messenger .quick-reply-container, body.avm-snow .quick-reply-container, body.avm-snow .quick-reply-container body.avm-snow .nav-bar.messages_nav-bar body.avm-snow .nav-bar h2 body.avm-messenger a, body.avm-snow .quick-reply-container body.avm-snow .nav-bar.messages_nav-bar body.avm-snow .nav-bar h2 body.avm-snow a, body.avm-snow a{
+  color:#f52727 !important;
+}
+body.avm-snow .compose-message-fields{
+  border-top:1px solid;
+  border-color:#f52727;
+  border-radius:24px;
+  background:#111;
+}
+body.avm-snow #queryTextbox{
+      font-family:monospace,sans-serif;
+  color:#20c76a;
+
+}
+.editor-wrapper{
+  background:#111;
+}
+.avaamo__chat__widget.avm-snow .avaamo__icon-close-icon{
+  background-color:#4caf50;
+  color:#111;
+}
+body.avm-snow .conversation-item.mine{
+  background-color:#111;
+}
+body.avm-snow .conversation-item.mine .media{
+    background-color:#111;
+}
+body.avm-snow .conversation-item.mine .media .desc{
+  color:#20c76a;  
+  font-family:monospace,sans-serif;
+}
+body.avm-messenger .quick-reply-container, body.avm-snow .quick-reply-container, body.avm-snow .quick-reply-container{
+      background-color:#111;
+
+}
+.quick-reply-container .links-container{
+        background-color:#111;
+
+}
+body.avm-messenger a.quick-reply, body.avm-snow a.quick-reply, body.avm-snow a.quick-reply{
+  border:1px solid #20c76a !important;
+  background-color:#20c76a;
+}
+body.avm-messenger .quick-reply-container, body.avm-snow .quick-reply-container, body.avm-snow .quick-reply-container body.avm-snow .nav-bar.messages_nav-bar body.avm-snow .nav-bar h2 body.avm-messenger a, body.avm-snow .quick-reply-container body.avm-snow .nav-bar.messages_nav-bar body.avm-snow .nav-bar h2 body.avm-snow a, body.avm-snow a{
+  color: #111 !important;
+}
+body.avm-snow .default_card{
+  background-color:#111;
+  border:0.1px solid #20c67a;
+}
+.avm-bot-welcome-notification{
+  border-radius:14px;
+  box-shadow:1px 2px 7px 0px rgb(1 1 1 / 15%);
+    font-family:monospace,sans-serif;
+background:#111;
+  
+}
+.avm-bot-welcome-notification h3 small{
+  color:#20c67a;
+}
+.avaamo__chat__widget.avm-snow .avaamo__popup.draggable:not(.loading){
+  background-color:#111;
+}
+body.avm-messenger .default_card_title, body.avm-snow .default_card_title{
+  color:#f52727;
+}
+body.avm-snow .default_card.attachments .default_card_description{
+  color:#20c67a;
+  font-family:math;
+}
+i, em{
+  color:#f52727 !important;
+}
+body.avm-snow div .default_card_link a{
+  color:#20c67a !important;
+}
+body.avm-messenger .default_card_link:hover, body.avm-snow .default_card_link:hover{
+  background:#111;
+}
+body.avm-snow div .default_card_link :hover{
+  color:#f52727 !important;
+  transition: ease-in-out 0.3s;
+}
+.composer__container__preview__container__question.composer__container__preview__container__question{
+  color:#20c67a;
+}
+input[type=text]{
+  background-color:#111;
+  border:1px solid #20c67a;
+  color:#f52727;
+}
+.textbox{
+  background-color:#111;
+  border:1px solid #20c67a;
+  color:#f52727;
+}
+body.avm-messenger a.quick-reply:hover, body.avm-snow a.quick-reply:hover, body.avm-snow a.quick-reply:hover{
+    background-color:#111;
+  color:#20c67a !important;
+}
+body.avm-snow .composer__container__preview__option__value{
+  color:#f52727;
+}
+body.avm-snow .composer__container__preview__option{
+  border:1px solid #20c67a;
+}
+body.avm-snow .default_card.attachments .btn{
+  background-color:#20c67a;
+  color:#111;
+}
+.composer__container__preview__option.selected .composer__container__preview__option__circle:before, .composer__container__preview__option.selected .composer__container__preview__option__square:before, input[type="radio"]:checked+.composer__container__preview__option__circle:before, input[type="checkbox"]:checked+.composer__container__preview__option__square:before{
+  border-radius:50%;
+  background-color:#20c67a;
+}
+.avm-bot-welcome-notification h3{
+  color:#f52727;
+}
